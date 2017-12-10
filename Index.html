@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sean Topham Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="StylesSheet\stylesheet.css">
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/mark.js/7.0.0/jquery.mark.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Portfolio</a>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#AboutMe">
+                                    <span class="glyphicon glyphicon-user"></span> About Me</a>
+                            </li>
+                            <li>
+                                <a href="#Education">
+                                    <span class="glyphicon glyphicon-education"></span> Education</a>
+                            </li>
+                            <li>
+                                <a href="#Grades">
+                                    <span class="glyphicon glyphicon-list-alt"></span> Grades</a>
+                            </li>
+                            <li>
+                                <a href="#Projects">
+                                    <span class="glyphicon glyphicon-duplicate"></span> Projects</a>
+                            </li>
+                        </ul>
+                        <!-- !-->
+
+
+                        <!-- !-->
+
+
+
+                        <form id="searchForm" form class="navbar-form navbar-right" action="javascript:search();">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- ****************************************************!-->
+        <div class="jumbotron text-center">
+            <div class="container">
+                <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAH2AAAAJDY0MWQ2YTU0LTI1ZDYtNDNkMS04MDMwLTYxNDVlMzBiNGJlMw.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+            </div>
+        </div>
+
+        <!-- ********************************************* !-->
+        <div id="AboutMe" class="aboutMeDiv">
+            <h1>About Me</h1>
+
+
+            <p>
+                    I am currently attending my first year in the Institute Of Technology Tallaght( ITT) where I am studying for my Bachelor of 
+                    Science (Honours). I have studied in Crumlin College Of Further Education(CCFE) for two years before coming to ITT, where I 
+                    obtained QQ1 Level 5 and Level 6 Certificates. I Feel that the time spent in CCFE has allowed me to mature as well as preparing 
+                    for third level education.
+                    
+                    I believe that I am a hard working, well focussed and well capable for new challenges. I love the area of Computing in general, 
+                    but my key focus is on Programming. I enjoy following tutorials on programming simple 2D games.</p>
+
+            <p>My CV:
+
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">
+                    <span class="glyphicon glyphicon-download-alt"></span> Download</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">CV Information</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>My CV is currently under going changes and may change in due time, keep this in mind when
+                                    viewing.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+
+                                <form method="get" action="CV-PlaceHolder.docx">
+                                    <button type="submit" class="btn btn-default"> Download </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p>
+            <p>Contact Me: 
+                        <form action="https://www.linkedin.com/in/seantopham94/">
+                            <input type="submit" class="btn btn-info btn-sm" value=" LinkedIn" />
+                        </form>
+            </p>
+
+
+
+        </div>
+        <div id="Education" class="container-fluid">
+            <h1>Education</h1>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Our Lady Of Mercy 2000-2012</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                                <h3>Leaving Cert</h3>
+                                <br>
+                                <br>
+    
+                                <h4>Subjects:</h4>
+                                Irish
+                                <br> English
+                                <br> Maths
+                                <br> Business
+                                <br> Art
+                                <br> History
+                                <br> Geography
+                                <br>
+                                <br>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Crumlin College 2012-2013</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <h3>Software Design & Development</h3>
+                            <br> This course prepares students for a rewarding career in software development. The core aim of
+                            the course is to impart the expertise necessary to design, develop and maintain software. Students
+                            undertake work experience in order to develop their skills in the IT area.
+                            <br>
+
+                            <h4>Subjects:</h4>
+                            Web Authoring
+                            <br> Software Architecture
+                            <br> Fundamentals of Object Oriented Programming
+                            <br> Maths for IT
+                            <br> Database Methods
+                            <br> Programming & Design Principles
+                            <br> Communications
+                            <br>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Crumlin College 2013-2014</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <h3>Computer Network and Support Technician</h3>
+                            <br> This course is designed to give students the opportunity to acquire the skills necessary to
+                            implement and support PC systems and networks. Successful graduates of the course can look forward
+                            to a rewarding and challenging career in this rapidly expanding field. Students will supplement
+                            their studies with work experience in a relevant area.
+                            <br>
+                            <h4>Subjects:</h4>
+                            Networking Essentials
+                            <br> Computer Systems Hardware
+                            <br> Programming & Design Principles
+                            <br> Operating Systems
+                            <br> ICT Security Policy & Management
+                            <br> Maths for IT
+                            <br> Communications
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Institute Technology Tallaght Dublin 2014-2018</a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <h3>Bachelor of Science (Honours) in Computing</h3>
+                            <br> This four year programme is aimed at giving you the skills and knowledge necessary to become
+                            a computer professional ready to work at the cutting edge of the computing industry. Typical
+                            roles obtained by graduates of this programme include systems developers, IT managers, database
+                            administrators, systems analysts and network engineers.
+                            <br> Course Content:
+                            <br>
+                            <h4>Semester 1</h4>
+                            Web & User Experience
+                            <br> Discrete Mathematics 1
+                            <br> Business & Information Systems
+                            <br> Software Development 1
+                            <br> Learning to Learn at Third Level
+                            <br>
+
+                            <h3></h3>Semester 2 Software Development 2
+                            <br> Object Oriented Systems Analysis
+                            <br> Database Fundamentals
+                            <br> Operating Systems Fundamentals
+                            <br> Statistics
+                            <br> Social Media Communications
+                            <br>
+
+                            <h3>Semester 3</h3>
+                            Web & Mobile Design & Development
+                            <br> Database Design And Programming
+                            <br> Software Development 3
+                            <br> Software Quality Assurance and Testing
+                            <br> Networking 1
+                            <br> Discrete Mathematics 2
+                            <br>
+
+                            <h3>Semester 4</h3>
+                            Project
+                            <br> Software Development 4
+                            <br> Management Science
+                            <br> Networking 2
+                            <br> Object Oriented Analysis & Design 1
+                            <br> Information Security
+                            <br>
+
+                            <h3>Semester 5</h3>
+                            Web Application Development
+                            <br> Operating Systems
+                            <br> Cloud Services & Distributed Computing
+                            <br> Innovation & Entrepreneurship
+                            <br> Advanced Databases
+                            <br>
+
+                            <h3>Semester 6</h3>
+                            Project
+                            <br> Algorithms and Data Structures 2
+                            <br> Object Oriented Analysis & Design 2
+                            <br> Network Management
+                            <br> Logic and Problem Solving
+                            <br>
+
+                            <h3>Semester 7</h3>
+                            Enterprise Applications Development 1
+                            <br> Interactive Media Design & Visualisation
+                            <br> Project
+                            <br> Social Media Analysis and Information Integration
+                            <br> Information Management
+                            <br> Enterprise Database Technologies
+                            <br>
+
+                            <h3>Semester 8</h3>
+                            Project
+                            <br> Enterprise Performance Architecture
+                            <br> Interactive Media Development
+                            <br> Computational Theory
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Grades" class="container-fluid">
+            <h1>Grades</h1>
+
+            <div class="grades-div">
+
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a data-toggle="tab" href="#home">First Year</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#menu2">Second Year</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#menu3">Third Year</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#menu4">Fourth Year</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Module</th>
+                                    <th>Grade</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Software Development 1</td>
+                                    <td>A</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Software Development 2</td>
+                                    <td>A</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Object Oriented System Analy</td>
+                                    <td>B+</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Social Media Communications</td>
+                                    <td>B-</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Database Fundamentals</td>
+                                    <td>A</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Operating Syst Fundamentals</td>
+                                    <td>B</td>
+
+                                </tr>
+                                <tr>
+                                    <td> Computer Architecture</td>
+                                    <td>B+</td>
+
+                                </tr>
+                                <tr>
+                                    <td> Fundament of Interface & Web</td>
+                                    <td>B+</td>
+
+                                </tr>
+                                <tr>
+                                    <td> Business & Information Sys</td>
+                                    <td>B-</td>
+
+                                </tr>
+                                <tr>
+                                    <td> Discrete Mathematics 1</td>
+                                    <td>A</td>
+
+                                </tr>
+                                <tr>
+                                    <td> Learning to Learn at 3rd Lvl</td>
+                                    <td>B+</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>GPA: 3.5</h3>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Module</th>
+                                    <th>Grade</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Software Development 3</td>
+                                    <td>C+</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Software Development 4</td>
+                                    <td>B</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Project</td>
+                                    <td>B</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Networking 1</td>
+                                    <td>B</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Networking 2</td>
+                                    <td>C+</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Management Science</td>
+                                    <td>A</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Object Oriented Analy & Design</td>
+                                    <td>C+</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Information Security</td>
+                                    <td>B</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Software Qual Ass & Testing</td>
+                                    <td>C+</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Database Design & Programmin</td>
+                                    <td>C+</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Discrete Mathematics 2</td>
+                                    <td>A</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Web Design and Development</td>
+                                    <td>B+</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>GPA: 3.0</h3>
+
+
+
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Module</th>
+                                    <th>Grade</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>NA</td>
+                                    <td>NA</td>
+
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                        <h3>GPA: NA</h3>
+                        <p>Grades For 3rd Year Are Not Available</p>
+
+                    </div>
+                    <div id="menu4" class="tab-pane fade">
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Module</th>
+                                    <th>Grade</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>NA</td>
+                                    <td>NA</td>
+
+                                
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>GPA: NA</h3>
+                        <p>Grades For 4th Year Are Not Available</p>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <div id="Projects" class="container-fluid">
+            <h1>Projects</h1>
+            <!-- ************************************************************************************************* !-->
+            <div class="project-carousel">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                        <div class="item active">
+                            <img src="images/3rdYearProject1.PNG" alt="3rdMainScreen" style="width:75%;">
+                            <div class="carousel-caption">
+                                <h3>3rdYear Project</h3>
+                                <p>Main Screen</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="images/3rdYearProject2.PNG" alt="3rdFullRoom" style="width:75%;">
+                            <div class="carousel-caption">
+                                <h3>3rdYear Project</h3>
+                                <p>Entering First Room</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="images/3rdYearProject3.PNG" alt="3rdBattle" style="width:75%;">
+                            <div class="carousel-caption">
+                                <h3>3rdYear Project</h3>
+                                <p>Battling Within The Room</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <h2>Current 4th Year Project progress</h2>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                    style="width:20%">
+                    20%, Class Implementation
+                </div>
+            </div>
+
+
+
+            <!-- *************************************************************************************************************** !-->
+            <div class="project-gallery">
+                <div class="container-fluid">
+                    <h2>List Of Projects Bellow, Click to go to GitHub.</h2>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            Angular 2
+                            <br> This Project was started and completed in 2nd Year of college, Link to Project:
+                            <form action="https://github.com/Toppo94/Angular2">
+                                <input type="submit" class="btn btn-info btn-sm" value=" GitHub" />
+                            </form>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            C++ plagiarism Detector
+                            <br>A plagiarism detector for a group of C++ files, Link to Project:
+                            <form action="https://github.com/Toppo94/ADS_CA1">
+                                <input type="submit" class="btn btn-info btn-sm" value=" GitHub" />
+                            </form>
+                        </div>
+                        <!-- Add clearfix for only the required viewport -->
+                        <div class="clearfix visible-xs"></div>
+                        <div class="col-xs-6 col-sm-3">
+                            EPA LAb Work
+                            <br> Contains Some Work that i have completed during the EPA Module, Link to Project:
+                            <form action="https://github.com/Toppo94/Epa-Fadora">
+                                <input type="submit" class="btn btn-info btn-sm" value=" GitHub" />
+                            </form>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            4th Year Project
+                            <br> Project for my final year within ITTD, Link to Project:
+                            <form action="https://github.com/Toppo94/4thYearProject">
+                                <input type="submit" class="btn btn-info btn-sm" value=" GitHub" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ********************************************** !-->
+
+
+
+    </body>
+
+
+</html>
